@@ -32,11 +32,11 @@ export const Sidebar = ({ activeLink }) => {
       url: null,
       subMenus: [
         { name: 'Accueil', active: 'dashboard', url: routes.pages.dashboard.initial },
-        { name: 'Presidence', active: 'ofms', url: routes.pages.ofms.initial },
-        { name: 'Primature', active: 'dmgp', url: routes.pages.dmgp.initial },
+        { name: 'Finance', active: 'ofms', url: routes.pages.ofms.initial },/* 
+        { name: 'Comptabilité', active: 'dmgp', url: routes.pages.dmgp.initial }, */
       ],
     },
-    {
+    /* {
       name: 'Présidence',
       icon: <HiOutlineHome fontSize={20} color="#1e293b" mt={1} />,
       active: 'null',
@@ -48,20 +48,17 @@ export const Sidebar = ({ activeLink }) => {
         { name: 'Projet', active: 'projet', url: routes.pages.projet.initial },
         { name: 'Action', active: 'action', url: routes.pages.action.initial },
       ],
-    },
-    {
+    }, */
+    /* {
       name: 'BO du Dashboard',
       icon: <MdOutlineAdminPanelSettings fontSize={20} color="#1e293b" mt={1} />,
       active: 'null',
       url: routes.pages.dmgp.initial,
       subMenus: [
         { name: 'Comptes', active: 'compte', url: routes.pages.compte.initial },
-/*         { name: 'Institution', active: 'institution', url: routes.pages.institution.initial },
-        { name: 'Structure', active: 'structure', url: routes.pages.structure.initial }, */
-       /*  { name: 'Activité', active: 'activite', url: routes.pages.activite.initial }, */
         { name: 'Equipe', active: 'equipe', url: routes.pages.equipe.initial },
       ],
-    },
+    }, */
   ];
 
   return (

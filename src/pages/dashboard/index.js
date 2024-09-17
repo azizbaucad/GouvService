@@ -187,7 +187,7 @@ export default function DescFormPage(props) {
             />
           </Box>
           <Box mr={3}>
-            <Button
+          <Button
               w={'100%'}
               bgColor={'#9999ff'}
               color={'white'}
@@ -230,7 +230,7 @@ export default function DescFormPage(props) {
               borderRadius={gstyle.radius}
             >
               <Box>
-                <TagTitle title={"Nombre d'actions"} size={16} />
+                <TagTitle title={"KPI"} size={16} />
                 <Divider mt={2} />
                 <ValuesData
                   iconType="up"
@@ -247,165 +247,13 @@ export default function DescFormPage(props) {
 
             <GridItem
               rowSpan={1}
-              colSpan={3}
-              bg="#f1f5f9"
-              p={gstyle.p}
-              borderRadius={gstyle.radius}
-            >
-              <Box>
-                <TagTitle title={'Action'} size={16} />
-              </Box>
-              <Divider mt={2} mb={2} />
-              <HStack justifyContent={'space-between'} alignItems="center">
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Action en cours'}
-                    iconType="up"
-                    value={12}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-                <Box h={'8vh'}>
-                  <Divider
-                    orientation="vertical"
-                    borderWidth={'1px'}
-                    borderColor={'#ebedf2'}
-                  />
-                </Box>
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Action réalisé'}
-                    iconType="up"
-                    value={14}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-                <Box h={'8vh'}>
-                  <Divider
-                    orientation="vertical"
-                    borderWidth={'1px'}
-                    borderColor={'#ebedf2'}
-                  />
-                </Box>
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Action en attente'}
-                    iconType="up"
-                    value={600}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-              </HStack>
-            </GridItem>
-
-            <GridItem
-              rowSpan={1}
               colSpan={1}
               bg="#f1f5f9"
               p={gstyle.p}
               borderRadius={gstyle.radius}
             >
               <Box>
-                <TagTitle title={'Nombre de programmes'} size={16} />
-                <Divider mt={2} />
-                <ValuesData
-                  iconType="up"
-                  value={20}
-                  delta={{
-                    label: 'Last Year',
-                    value: '+5%',
-                    valueColor: '#02bc7d',
-                  }}
-                />
-              </Box>
-              {/* <Divider mt={3} mb={2} /> */}
-            </GridItem>
-
-            <GridItem
-              rowSpan={1}
-              colSpan={3}
-              bg="#f1f5f9"
-              p={gstyle.p}
-              borderRadius={gstyle.radius}
-            >
-              <Box>
-                <TagTitle title={'Programme'} size={16} />
-              </Box>
-              <Divider mt={2} mb={2} />
-              <HStack justifyContent={'space-between'} alignItems="center">
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'programme en cours'}
-                    iconType="up"
-                    value={12}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-                <Box h={'8vh'}>
-                  <Divider
-                    orientation="vertical"
-                    borderWidth={'1px'}
-                    borderColor={'#ebedf2'}
-                  />
-                </Box>
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Programme réalisé'}
-                    iconType="up"
-                    value={14}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-                <Box h={'8vh'}>
-                  <Divider
-                    orientation="vertical"
-                    borderWidth={'1px'}
-                    borderColor={'#ebedf2'}
-                  />
-                </Box>
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Programme en attente'}
-                    iconType="up"
-                    value={600}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-              </HStack>
-            </GridItem>
-            <GridItem
-              rowSpan={1}
-              colSpan={1}
-              bg="#f1f5f9"
-              p={gstyle.p}
-              borderRadius={gstyle.radius}
-            >
-              <Box>
-                <TagTitle title={'Nombre de projets'} size={16} />
+                <TagTitle title={"KPI"} size={16} />
                 <Divider mt={2} />
                 <ValuesData
                   iconType="up"
@@ -422,68 +270,96 @@ export default function DescFormPage(props) {
 
             <GridItem
               rowSpan={1}
-              colSpan={3}
+              colSpan={1}
               bg="#f1f5f9"
               p={gstyle.p}
               borderRadius={gstyle.radius}
             >
               <Box>
-                <TagTitle title={'Projet'} size={16} />
+                <TagTitle title={"KPI"} size={16} />
+                <Divider mt={2} />
+                <ValuesData
+                  iconType="up"
+                  value={60}
+                  delta={{
+                    label: 'Last Year',
+                    value: '+5%',
+                    valueColor: '#02bc7d',
+                  }}
+                />
               </Box>
-              <Divider mt={2} mb={2} />
-              <HStack justifyContent={'space-between'} alignItems="center">
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Projet en cours'}
-                    iconType="up"
-                    value={12}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-                <Box h={'8vh'}>
-                  <Divider
-                    orientation="vertical"
-                    borderWidth={'1px'}
-                    borderColor={'#ebedf2'}
-                  />
-                </Box>
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Projet réalisé'}
-                    iconType="up"
-                    value={14}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-                <Box h={'8vh'}>
-                  <Divider
-                    orientation="vertical"
-                    borderWidth={'1px'}
-                    borderColor={'#ebedf2'}
-                  />
-                </Box>
-                <HStack justifyContent={'space-between'}>
-                  <ValuesData
-                    tagName={'Projet en attente'}
-                    iconType="up"
-                    value={600}
-                    delta={{
-                      label: 'Last Year',
-                      value: '+5%',
-                      valueColor: '#02bc7d',
-                    }}
-                  />
-                </HStack>
-              </HStack>
+              {/* <Divider mt={3} mb={2} /> */}
             </GridItem>
+
+            <GridItem
+              rowSpan={1}
+              colSpan={1}
+              bg="#f1f5f9"
+              p={gstyle.p}
+              borderRadius={gstyle.radius}
+            >
+              <Box>
+                <TagTitle title={"KPI"} size={16} />
+                <Divider mt={2} />
+                <ValuesData
+                  iconType="up"
+                  value={60}
+                  delta={{
+                    label: 'Last Year',
+                    value: '+5%',
+                    valueColor: '#02bc7d',
+                  }}
+                />
+              </Box>
+              {/* <Divider mt={3} mb={2} /> */}
+            </GridItem>
+            <GridItem
+              rowSpan={1}
+              colSpan={1}
+              bg="#f1f5f9"
+              p={gstyle.p}
+              borderRadius={gstyle.radius}
+            >
+              <Box>
+                <TagTitle title={"KPI"} size={16} />
+                <Divider mt={2} />
+                <ValuesData
+                  iconType="up"
+                  value={60}
+                  delta={{
+                    label: 'Last Year',
+                    value: '+5%',
+                    valueColor: '#02bc7d',
+                  }}
+                />
+              </Box>
+              {/* <Divider mt={3} mb={2} /> */}
+            </GridItem>
+
+            <GridItem
+              rowSpan={1}
+              colSpan={1}
+              bg="#f1f5f9"
+              p={gstyle.p}
+              borderRadius={gstyle.radius}
+            >
+              <Box>
+                <TagTitle title={"KPI"} size={16} />
+                <Divider mt={2} />
+                <ValuesData
+                  iconType="up"
+                  value={60}
+                  delta={{
+                    label: 'Last Year',
+                    value: '+5%',
+                    valueColor: '#02bc7d',
+                  }}
+                />
+              </Box>
+              {/* <Divider mt={3} mb={2} /> */}
+            </GridItem>
+            
+            
 
             {/* <GridItem
               rowSpan={50}
@@ -522,6 +398,50 @@ export default function DescFormPage(props) {
                 </HStack>
               </HStack>
             </GridItem> */}
+            <GridItem
+              rowSpan={1}
+              colSpan={1}
+              bg="#f1f5f9"
+              p={gstyle.p}
+              borderRadius={gstyle.radius}
+            >
+              <Box>
+                <TagTitle title={"KPI"} size={16} />
+                <Divider mt={2} />
+                <ValuesData
+                  iconType="up"
+                  value={60}
+                  delta={{
+                    label: 'Last Year',
+                    value: '+5%',
+                    valueColor: '#02bc7d',
+                  }}
+                />
+              </Box>
+              {/* <Divider mt={3} mb={2} /> */}
+            </GridItem>
+            <GridItem
+              rowSpan={1}
+              colSpan={1}
+              bg="#f1f5f9"
+              p={gstyle.p}
+              borderRadius={gstyle.radius}
+            >
+              <Box>
+                <TagTitle title={"KPI"} size={16} />
+                <Divider mt={2} />
+                <ValuesData
+                  iconType="up"
+                  value={60}
+                  delta={{
+                    label: 'Last Year',
+                    value: '+5%',
+                    valueColor: '#02bc7d',
+                  }}
+                />
+              </Box>
+              {/* <Divider mt={3} mb={2} /> */}
+            </GridItem>
             <GridItem
               rowSpan={60}
               colSpan={2}
